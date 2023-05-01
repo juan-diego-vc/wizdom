@@ -1,0 +1,61 @@
+.components-list{
+    max-height: 2in;
+    /* width: 50%; */
+    width: 3in;
+    overflow: scroll;
+    overflow-x:  hidden;
+    background-color: #202020;
+    /* background-color: red; */
+}
+
+.component{
+    cursor:copy;
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - .25rem);
+    height: 4rem;
+    margin: .125rem .25rem;
+}
+
+.component:hover{
+    background-color: rgb(76, 87, 97);
+}
+
+.preview{
+    height: 100%;
+    background-color: white;
+    aspect-ratio: 1/1;
+}
+
+.component-description{
+    padding: .25rem 1rem;
+    font-size: .5rem;
+}
+
+.component-description p {
+    color: #a0a0a0;
+}
+
+.component-description h3 {
+    color: whitesmoke;
+}
+
+
+/* Chrome, Edge, and Safari */
+.components-list::-webkit-scrollbar {
+    background-color: yellow;
+    background-color: transparent;
+    width: .25rem;
+}
+
+.components-list::-webkit-scrollbar-track {
+    background: limegreen;
+    background: transparent;
+}
+
+.components-list::-webkit-scrollbar-thumb {
+    background-color: lightgrey;
+    border-radius: .125rem;
+    border: 6px solid pink;
+    border: none;
+}

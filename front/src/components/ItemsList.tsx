@@ -2,6 +2,8 @@ import { useState, DragEvent, useRef } from "react";
 import "./ItemsList.css";
 
 import { MdOutlineDragIndicator } from 'react-icons/md'
+import { BsPlusLg } from 'react-icons/bs'
+import IconBox from "./IconBox";
 
 interface DraggableItemProps {
   id: number;
@@ -51,7 +53,11 @@ const DraggableItem = ({ id, content, onDragOver, onDrop, onDragLeave, onDragSta
       onDrop={(e) => onDrop(e, id)}
       onDragLeave={(e) => onDragLeave(e)}
       className="draggable-item"
-      >
+    >
+      {/* <span className="add"><BsPlusLg/></span> */}
+      <IconBox size="1.75rem" bgColorHover="skyblue" clickable={true}>
+        <BsPlusLg/>
+      </IconBox>
       <DraggableHandle onDragStart={handleDragStart} />
       {content}
     </div>
