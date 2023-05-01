@@ -1,7 +1,7 @@
 import './CreatePage.css'
 
 import SidebarMenu from "../components/SidebarMenu"
-import ItemsList from "../test-components/ItemsList"
+import ItemsList from "../components/ItemsList"
 
 export default function CreatePage(){
 
