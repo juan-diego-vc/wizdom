@@ -1,0 +1,50 @@
+.loader{
+    margin: auto;
+    display: flex;
+    width: 20rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader .line{
+    background-color: #666666;
+    height: .25rem;
+    width: 100%;
+
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
+.loader .line:before {
+    content: "";
+    position: absolute;
+    left: -50%;
+    height: 3px;
+    width: 40%;
+    background-color: fuchsia;
+    -webkit-animation: lineAnim 1s linear infinite;
+    -moz-animation: lineAnim 1s linear infinite;
+    animation: lineAnim 1s linear infinite;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+@keyframes lineAnim {
+    0% {
+        width: 10%;
+        left: -40%;
+    }
+    50% {
+        width: 40%;
+        left: 20%;
+        width: 80%;
+    }
+    100% {
+        width: 10%;
+        left: 100%;
+        width: 100%;
+    }
+}

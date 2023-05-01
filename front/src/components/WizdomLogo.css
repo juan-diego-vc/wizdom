@@ -1,0 +1,30 @@
+:root{
+    --border : rgb(147, 75, 136);
+    --background : transparent;
+}
+
+.wizdom-logo{
+    /* border: 1px solid var(--border); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.wizdom-svg{
+    width: 2.125rem;
+    height: 2.125rem;
+}
+
+.name{
+    height: 1.7rem;
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    /* border: 1px solid var(--border); */
+    background-color: var(--background);
+    color: var(--border);
+}

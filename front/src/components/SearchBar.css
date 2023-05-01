@@ -1,0 +1,31 @@
+:root {
+    --color: #888888;
+}
+
+.search-bar {
+    background-color: var(--gray-black);
+    display: flex;
+    border: 2px solid transparent;
+    color: var(--color);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.25rem;
+    width: 75%;
+}
+
+.search-bar input[type=text] {
+    background-color: inherit;
+    width: calc(100% - 1cm);
+    font-weight: 500;
+    border: 2px solid transparent;
+    height: 100%;
+    color: var(--color);
+    font-size: 1.1rem;
+    outline: none;
+    padding: .25cm;
+}
+
+.focus {
+    border: 2px solid #6d5ddf;
+}

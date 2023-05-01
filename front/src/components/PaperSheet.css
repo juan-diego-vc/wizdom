@@ -1,0 +1,7 @@
+.paper-sheet{
+    background-color: white;
+    width: calc(8.5in * .5);
+    height: calc(11in * .5);
+    box-shadow: 0px 0px 20px #8888dd;
+    box-shadow: 0px 0px 30px grey;
+}

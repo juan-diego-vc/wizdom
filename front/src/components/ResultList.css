@@ -1,0 +1,39 @@
+.result-list {
+    width: 100%;
+    height: 100%;
+    padding-right: 25%;
+    /* max-height: 80vh; */
+    /* height: auto; */
+    overflow-y: scroll;
+    scrollbar-width: auto;
+    scrollbar-color: #747474 #ffffff0f;
+    margin-bottom: 1rem;
+}
+
+.result-list .legend{
+    font-size: .85rem;
+    color: grey;
+    text-align:left;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.result-list .end {
+    text-align: center;
+    color: grey,
+}
+
+/* Chrome, Edge, and Safari */
+.result-list::-webkit-scrollbar {
+    width: 1rem;
+}
+
+.result-list::-webkit-scrollbar-track {
+    background: #ffffff0f;
+}
+
+.result-list::-webkit-scrollbar-thumb {
+    background-color: #747474;
+    border-radius: 0px;
+    border: 6px solid #ffffff0f;
+}

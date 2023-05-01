@@ -1,0 +1,8 @@
+.resize{
+    position: absolute;
+    background-color: purple;
+    width: calc(1in / 10);
+    height: calc(1in / 10);
+    cursor: se-resize;
+    border-radius: 50%;
+}
