@@ -6,10 +6,11 @@ interface proptypes {
     size? : string,
     bgColor? : string,
     bgColorHover? : string,
-    clickable? : boolean
+    clickable? : boolean,
+    onClick? : Function
 }
 
-export default function IconBox({ children, size, bgColor, bgColorHover, clickable } : proptypes){
+export default function IconBox({ children, size, bgColor, bgColorHover, clickable, onClick = () => {} } : proptypes){
     const [ isHovered , setIsHovered] = useState(false);
 
     const container = useRef<HTMLDivElement>(null)
@@ -17,8 +18,8 @@ export default function IconBox({ children, size, bgColor, bgColorHover, clickab
     const styles : CSSProperties = {
         width : size,
         height : size,
+        cursor : clickable ? 'pointer' : undefined,
         backgroundColor : isHovered ? bgColorHover : bgColor,
-        cursor : clickable ? 'pointer' : undefined
     }
 
     const handleHover = () => setIsHovered(true)
@@ -30,6 +31,7 @@ export default function IconBox({ children, size, bgColor, bgColorHover, clickab
         ref={container}
         onMouseEnter={handleHover}
         onMouseLeave={handleBlur}
+        onClick={(e) => onClick(e) }
     >
         { children }
     </div>

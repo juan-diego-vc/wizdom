@@ -1,7 +1,9 @@
 .sidebar-menu{
     font-size: 1.125rem;
+    font-size: 1.5rem;
     height: 100%;
     background-color: #151515;
+    background-color: #1d1d1d;
     padding: 2rem 0;
     display: flex;
     flex-direction: column;
@@ -13,16 +15,22 @@
 
 .sidebar-menu .item{
     color: grey;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     width: 100%;
-    display: flex;
     cursor: pointer;
-    align-items: center;
-    display: flex;
+
     transition-duration: 125ms;
-    margin-top: .5rem;
+    margin-top: .25rem;
     height: 3rem;
     padding: .5rem 1.25rem;
+    /* border: 1px solid pink; */
+}
+
+.sidebar-menu .inner-area {
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .sidebar-menu .item:hover{

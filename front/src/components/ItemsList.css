@@ -2,24 +2,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 80%;
   /* background-color: pink; */
 }
 
 .draggable-handle {
-  display: inline-flex;
+  cursor: move;
+
+
+  /* display: inline-flex;
   justify-content: center;
   align-items: center;
   width: min-content;
-  cursor: move;
   height: 30px;
   margin-left: 10px;
   padding: 5px;
-  /* background-color: #3f51b5; */
   color: white;
   border-radius: 5px;
-  cursor: move;
-  user-select: none;
+  user-select: none; */
 }
 
 .draggable-item {
@@ -27,11 +27,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
   margin: 5px;
-  background-color: dodgerblue;
-  border-radius: 5px;
-  padding-right: 1in;
+  /* background-color: dodgerblue; */
+  /* border-radius: 5px; */
   width: 100%;
 }
 
@@ -69,4 +67,27 @@
 .add{
   cursor: pointer;
   background-color: red;
+}
+
+/*********************************************/
+
+.options{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: min-content;
+  /* background-color: pink; */
+  opacity: 0;
+}
+
+.options:hover{
+  opacity: 1;
+}
+
+.space {
+  /* background-color: #222222; */
+  border-radius: 5px;
+  width: 100%;
+  height: min-content;
+  /* padding: 1rem; */
 }

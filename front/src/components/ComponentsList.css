@@ -9,7 +9,7 @@
 }
 
 .component{
-    cursor:copy;
+    cursor:pointer;
     display: flex;
     flex-direction: row;
     width: calc(100% - .25rem);
