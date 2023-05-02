@@ -76,7 +76,7 @@ const DraggableItem = ({ id, content, onDragOver, onDrop, onDragLeave, onDragSta
 const ItemsList = () => {
   const [items, setItems]: [Item[], Function] = useState([
     { id: 1, content: "Texto random generado solo para ejemplificar como funciona el componente en el cual se almacenará el texto" },
-    { id: 2, content: "Item 2" },
+    { id: 2, content: "Otro texto de muestra para la lista" },
     { id: 3, content: "Item 3" },
     { id: 4, content: "Item 4" },
     { id: 5, content: "Item 5" },
